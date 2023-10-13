@@ -42,7 +42,7 @@ jobs:
 
     # Generate an execution plan for Terraform
     - name: Terraform Plan
-      run:  terraform plan -out=tfplan.out
+      run:  terraform plan -out=tfplan
 
     # Save terraform plan to artifact
     - name: Archive Terraform Plan
@@ -50,6 +50,3 @@ jobs:
       with:
         name: tfplan
         path: tfplan
-
-  terraform-apply:
-
