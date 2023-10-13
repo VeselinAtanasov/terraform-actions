@@ -1,5 +1,5 @@
 resource_group_name     = "TaskBoardRg"
-resource_group_location = "Nort Europe"
+resource_group_location = "North Europe"
 app_service_plan_name   = "task-board-plan"
 app_service_name        = "task-board"
 sql_server_name         = "taskboard-sql"
