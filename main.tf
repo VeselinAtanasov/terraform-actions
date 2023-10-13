@@ -6,6 +6,13 @@ terraform {
       version = "3.75.0"
     }
   }
+
+  backend "azurerm" {
+    resource_group_name = "StorageRG"
+    storage_account_name = "taskboardvesko"
+    container_name = "taskboardcontainer"
+    key = "terraform.tfstate"
+  }
 }
 
 # Configure the Microsoft Azure Provider = mandatory to work
